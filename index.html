@@ -13,7 +13,7 @@
     <title>Блог новостей</title>
   </head>
   <body>
-    <div class="background__hero">
+    <div class="background-hero">
       <div class="container">
         <header class="navbar">
           <div class="navbar__logo">
@@ -76,7 +76,7 @@
         </section>
       </div>
       <!-- /.container -->
-      <div class="hero__wale"></div>
+      <div class="hero-wale"></div>
     </div>
     <div class="container">
       <div class="featured">
@@ -96,27 +96,30 @@
             В этом цифровом поколении, где информацию можно легко получить за
             секунды, визитки ...
           </div>
-          <div class="featured__account">
-            <div class="featured__logo">
-              <img
-                class="featured__logo-image"
-                src="image/fear__logo.png"
-                alt="Image: Logo"
-              />
-            </div>
-            <div class="featured__person">
-              <div class="featured__name">Viola Manisa</div>
-              <div class="featured__verified">
-                <div class="featured__verified-icon">
-                  <img
-                    src="image/featured__verified.svg"
-                    alt="icon: verified"
-                  />
+          <div class="account">
+            <div class="account__info">
+              <div class="account__logo">
+                <img
+                  class="account__logo-image"
+                  src="image/fear__logo.png"
+                  alt="Image: Logo"
+                />
+              </div>
+              <div class="account__person">
+                <div class="account__name">Viola Manisa</div>
+                <div class="account__verified">
+                  <div class="account__verified-icon">
+                    <img
+                      src="image/account__verified.svg"
+                      alt="icon: verified"
+                    />
+                  </div>
+                  <div class="account__verified-text">Verified writer</div>
                 </div>
-                <div class="featured__verified-text">Verified writer</div>
               </div>
             </div>
-            <div class="featured__date">02 May</div>
+            <!-- /.account__account-info -->
+            <div class="account__date">02 May</div>
           </div>
         </div>
       </div>
@@ -133,48 +136,113 @@
             Мы делимся общими тенденциями, стратегическими идеями, мнениями,
             короткими и длинными историями команды, стоящей за компанией.
           </div>
-          <div class="popular__button">
-            <button class="popular__btn">
+          <div class="button-blue button-blue-popular">
+            <button class="button-blue__btn">
               Смотреть все
               <img
-                class="popular__btn-icon button__icon"
+                class="button-blue__icon button-blue__popular-icon"
                 src="image/arrow-right.svg"
                 alt="Icon: arrow-right"
               />
             </button>
-            <!-- /.popular__btn -->
+            <!-- /.button-blue__btn -->
           </div>
-          <!-- /.popular__button -->
+          <!-- /.button-blue -->
         </div>
         <!-- /.popular__text -->
         <div class="popular__card">
           <div class="popular__item">
             <img
               src="image/popual__image.jpg"
-              alt="image mom and kids"
+              alt="image : mom and kids"
               class="popular__image"
             />
-            <div class="popular__offers">
-              <a href="#" class="popular__offers-link">Предложения</a>
-            </div>
-            <!-- /.popular__offers -->
-            <div class="popular__item-title">
-              Как защитить свою семью от угарного газа
-            </div>
-            <!-- /.popular__item-title -->
-            <div class="featured__person">
-              <div class="featured__name">Viola Manisa</div>
-              <div class="featured__verified">
-                <div class="featured__verified-icon">
-                  <img
-                    src="image/featured__verified.svg"
-                    alt="icon: verified"
-                  />
-                </div>
-                <div class="featured__verified-text">Verified writer</div>
+            <div class="popular__item-info">
+              <div class="popular__offers">
+                <a href="#" class="popular__offers-link">Предложения</a>
               </div>
+              <!-- /.popular__offers -->
+              <h2 class="popular__item-title">
+                Как защитить свою семью от угарного газа
+              </h2>
+              <!-- /.popular__item-title -->
+              <div class="account">
+                <div class="account__info account__info-popular">
+                  <div class="account__logo">
+                    <img
+                      class="account__logo-image"
+                      src="image/fear__logo.png"
+                      alt="Image: Logo"
+                    />
+                  </div>
+                  <div class="account__person account__person-popular">
+                    <div class="account__name account__name-popular">
+                      Viola Manisa
+                    </div>
+                    <div class="account__verified">
+                      <div class="account__verified-icon">
+                        <img
+                          src="image/account__verified.svg"
+                          alt="icon: verified"
+                        />
+                      </div>
+                      <div class="account__verified-text">Verified writer</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.account__account-info -->
+                <div class="account__date">02 May</div>
+              </div>
+              <!-- /.account -->
             </div>
-            <div class="featured__date">02 May</div>
+            <!-- /.popular__item-info -->
+          </div>
+          <!-- /.popular__item -->
+          <div class="popular__item">
+            <img
+              src="image/image__card-2.jpg"
+              alt="image : mom and kids"
+              class="popular__image"
+            />
+            <div class="popular__item-info">
+              <div class="popular__offers">
+                <a href="#" class="popular__offers-link">Предложения</a>
+              </div>
+              <!-- /.popular__offers -->
+              <h2 class="popular__item-title popular__item-title-secondary">
+                Материнство - самая трудная и лучшая работа на свете
+              </h2>
+              <!-- /.popular__item-title -->
+              <div class="account">
+                <div class="account__info account__info-popular">
+                  <div class="account__logo">
+                    <img
+                      class="account__logo-image"
+                      src="image/fear__logo.png"
+                      alt="Image: Logo"
+                    />
+                  </div>
+                  <div class="account__person account__person-popular">
+                    <div class="account__name account__name-popular">
+                      Viola Manisa
+                    </div>
+                    <div class="account__verified">
+                      <div class="account__verified-icon">
+                        <img
+                          src="image/account__verified.svg"
+                          alt="icon: verified"
+                        />
+                      </div>
+                      <div class="account__verified-text">Verified writer</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.account__account-info -->
+                <div class="account__date">02 May</div>
+              </div>
+              <!-- /.account -->
+            </div>
+            <!-- /.popular__item-info -->
           </div>
           <!-- /.popular__item -->
         </div>
@@ -183,9 +251,160 @@
       <!-- /.container -->
     </section>
     <!-- /.popular -->
-  </body>
+    <section class="recent">
+      <div class="container">
+        <h2 class="recent__title">Последние Статьи</h2>
+        <div class="recent__info">
+          <p class="recent__text">Вот чем мы занимались в последнее время.</p>
+          <div class="button-blue button-blue-recent">
+            <button class="button-blue__btn">
+              Смотреть все
+              <img
+                class="button-blue__icon button-blue-recent-icon"
+                src="image/arrow-right.svg"
+                alt="Icon: arrow-right"
+              />
+            </button>
+            <!-- /.button-blue__btn -->
+          </div>
+          <!-- /.button-blue -->
+        </div>
+        <!-- /.recent__info -->
+        <div class="recent__card">
+          <div class="recent__item">
+            <img
+              src="image/recent__image-1.jpg"
+              alt="image: The Future of Work"
+            />
+            <div class="recent__item-info">
+              <h3 class="recent__item-title">Будущее Работы</h3>
+              <p class="recent__item-text">
+                Большинство людей будут работать на рабочих местах, которых
+                сегодня не существует.
+              </p>
+              <div class="account">
+                <div class="account__info account__info-popular">
+                  <div class="account__logo">
+                    <img
+                      class="account__logo-image"
+                      src="image/fear__logo.png"
+                      alt="Image: Logo"
+                    />
+                  </div>
+                  <div class="account__person account__person-popular">
+                    <div class="account__name account__name-popular">
+                      Viola Manisa
+                    </div>
+                    <div class="account__verified">
+                      <div class="account__verified-icon">
+                        <img
+                          src="image/account__verified.svg"
+                          alt="icon: verified"
+                        />
+                      </div>
+                      <div class="account__verified-text">Verified writer</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.account__account-info -->
+                <div class="account__date">02 May</div>
+              </div>
+              <!-- /.account -->
+            </div>
+          </div>
+          <!-- /.recent__item -->
 
+          <div class="recent__item">
+            <img
+              src="image/recent__image-2.jpg"
+              alt="image: The Future of Work"
+            />
+            <div class="recent__item-info">
+              <h3 class="recent__item-title">Будущее Данных</h3>
+              <p class="recent__item-text">
+                Благодаря нескончаемым объемам данных и количеству инсайтов
+              </p>
+              <div class="account">
+                <div class="account__info account__info-popular">
+                  <div class="account__logo">
+                    <img
+                      class="account__logo-image"
+                      src="image/fear__logo.png"
+                      alt="Image: Logo"
+                    />
+                  </div>
+                  <div class="account__person account__person-popular">
+                    <div class="account__name account__name-popular">
+                      Viola Manisa
+                    </div>
+                    <div class="account__verified">
+                      <div class="account__verified-icon">
+                        <img
+                          src="image/account__verified.svg"
+                          alt="icon: verified"
+                        />
+                      </div>
+                      <div class="account__verified-text">Verified writer</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.account__account-info -->
+                <div class="account__date">02 May</div>
+              </div>
+              <!-- /.account -->
+            </div>
+          </div>
+          <!-- /.recent__item -->
+          <div class="recent__item">
+            <img
+              src="image/recent__image-3.jpg"
+              alt="image: The Future of Work"
+            />
+            <div class="recent__item-info">
+              <h3 class="recent__item-title">Будущее Обучения</h3>
+              <p class="recent__item-text">
+                Постоянная способность учиться будет на самых важных навыках.
+              </p>
+              <div class="account">
+                <div class="account__info account__info-popular">
+                  <div class="account__logo">
+                    <img
+                      class="account__logo-image"
+                      src="image/fear__logo.png"
+                      alt="Image: Logo"
+                    />
+                  </div>
+                  <div class="account__person account__person-popular">
+                    <div class="account__name account__name-popular">
+                      Viola Manisa
+                    </div>
+                    <div class="account__verified">
+                      <div class="account__verified-icon">
+                        <img
+                          src="image/account__verified.svg"
+                          alt="icon: verified"
+                        />
+                      </div>
+                      <div class="account__verified-text">Verified writer</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.account__account-info -->
+                <div class="account__date">02 May</div>
+              </div>
+              <!-- /.account -->
+            </div>
+          </div>
+          <!-- /.recent__item -->
+        </div>
+        <!-- /.recent__card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.recent -->
+  </body>
   <svg
+    id="wale-svg"
     width="1440"
     height="175"
     viewBox="0 0 1440 175"
@@ -201,4 +420,6 @@
       />
     </clipPath>
   </svg>
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="js/main.js"></script>
 </html>

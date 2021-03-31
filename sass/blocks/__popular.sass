@@ -1,6 +1,9 @@
 .air
   height: 221px
 .popular
+  &__card
+    display: flex
+    justify-content: space-between
   &__title
     font-family: Roboto
     font-style: normal
@@ -19,6 +22,41 @@
     color: $color-text
     max-width: 700px
     margin-right: 23%
+    margin-bottom: 46px
+  &__item
+    position: relative
+    width: 555px
+    height: 600px
+    border-radius: 16px
+    overflow: hidden
+    &-info
+      position: absolute
+      width: 100%
+      top: 0
+      padding: 32px 50px 42px 32px
+    &-title
+      padding-top: 54%
+      padding-left: 4%
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      color: $light
+      margin-bottom: 76px
+      &-secondary
+        padding-top: 52%
+        margin-bottom: 38px
+  &__offers
+    margin-top: 6px
+    margin-left: 2px
+    &-link
+      padding: 5px 14px
+      background-color: $light
+      border-radius: 14px
+      text-transform: uppercase
+      color: $green_var
+.button-blue
   &__btn
     position: relative
     padding: 11px 15px 11px 21px
@@ -32,9 +70,16 @@
     font-size: 16px
     line-height: 22px
     text-align: left
-.button
-  &__icon
-    width: 13px
-    height: 16px
-    margin-left: 7px
-    padding-top: 4px
+  &__button
+    &-icon
+      width: 13px
+      height: 16px
+      margin-left: 7px
+      padding-top: 4px
+  &-recent
+    margin-right: 13px
+    &-icon
+      width: 13px
+      height: 16px
+      margin-left: 7px
+      padding-top: 4px
