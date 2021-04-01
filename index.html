@@ -17,17 +17,21 @@
       <div class="container">
         <header class="navbar">
           <div class="navbar__logo">
-            <img src="image/logo.png" alt="Logo: ehua" />
+            <img
+              class="navbar__logo-img"
+              src="image/logo.png"
+              alt="Logo: ehua"
+            />
           </div>
           <div class="navbar__menu">
-            <div class="navbar__link">
+            <div class="navbar__link navbar__link-home">
               <a href="#" class="navbar-links">Домой</a>
             </div>
-            <div class="navbar__link">
+            <div class="navbar__link navbar__link-landing">
               <a href="#" class="navbar-links">Лендинги</a>
               <button class="navbar__link-btn"></button>
             </div>
-            <div class="navbar__link">
+            <div class="navbar__link navbar__link-pages">
               <a href="#" class="navbar-links">Страницы</a>
               <button class="navbar__link-btn"></button>
             </div>
@@ -40,6 +44,11 @@
           <div class="navbar__button">
             <button class="navbar__btn">Получить</button>
           </div>
+          <button class="menu-button">
+            <span class="menu-button-line"></span
+            ><span class="menu-button-line"></span
+            ><span class="menu-button-line"></span>
+          </button>
         </header>
         <!-- /.navbar -->
       </div>
@@ -78,12 +87,12 @@
       <!-- /.container -->
       <div class="hero-wale"></div>
     </div>
-    <div class="container">
+    <div class="container container-featured">
       <div class="featured">
         <div class="featured__image">
           <img
             class="featured__image-fear"
-            src="image/fear__image.png"
+            src="image/fear__image.jpg"
             alt="iamge: Home and Bus"
           />
         </div>
@@ -119,7 +128,7 @@
               </div>
             </div>
             <!-- /.account__account-info -->
-            <div class="account__date">02 May</div>
+            <div class="account__date account__date-featured">02 May</div>
           </div>
         </div>
       </div>
@@ -129,8 +138,8 @@
     <div class="air"></div>
     <section class="popular">
       <div class="container">
-        <div class="h2 popular__title">Популярные Статьи</div>
-        <!-- /.h2 popular__title -->
+        <h2 class="popular__title">Популярные Статьи</h2>
+        <!-- /.popular__title -->
         <div class="popular__info">
           <div class="popular__text">
             Мы делимся общими тенденциями, стратегическими идеями, мнениями,
@@ -218,13 +227,13 @@
                   <div class="account__logo">
                     <img
                       class="account__logo-image"
-                      src="image/fear__logo.png"
+                      src="image/fear__logo-2.jpg"
                       alt="Image: Logo"
                     />
                   </div>
                   <div class="account__person account__person-popular">
                     <div class="account__name account__name-popular">
-                      Viola Manisa
+                      Joshua William
                     </div>
                     <div class="account__verified">
                       <div class="account__verified-icon">
@@ -253,7 +262,7 @@
     <!-- /.popular -->
     <section class="recent">
       <div class="container">
-        <h2 class="recent__title">Последние Статьи</h2>
+        <h2 class="recent__title">Последние статьи</h2>
         <div class="recent__info">
           <p class="recent__text">Вот чем мы занимались в последнее время.</p>
           <div class="button-blue button-blue-recent">
@@ -283,17 +292,21 @@
                 сегодня не существует.
               </p>
               <div class="account">
-                <div class="account__info account__info-popular">
+                <div class="account__info">
                   <div class="account__logo">
                     <img
-                      class="account__logo-image"
-                      src="image/fear__logo.png"
+                      class="account__logo-image account__logo-image-recent"
+                      src="image/recent__logo-1.jpg"
                       alt="Image: Logo"
                     />
                   </div>
-                  <div class="account__person account__person-popular">
-                    <div class="account__name account__name-popular">
-                      Viola Manisa
+                  <div
+                    class="account__person account__person-popular account__person-recent"
+                  >
+                    <div
+                      class="account__name account__name-popular account__name-recent"
+                    >
+                      Lina Hicks
                     </div>
                     <div class="account__verified">
                       <div class="account__verified-icon">
@@ -321,21 +334,25 @@
             />
             <div class="recent__item-info">
               <h3 class="recent__item-title">Будущее Данных</h3>
-              <p class="recent__item-text">
+              <p class="recent__item-text recent__item-text-sec">
                 Благодаря нескончаемым объемам данных и количеству инсайтов
               </p>
               <div class="account">
-                <div class="account__info account__info-popular">
+                <div class="account__info">
                   <div class="account__logo">
                     <img
-                      class="account__logo-image"
-                      src="image/fear__logo.png"
+                      class="account__logo-image account__logo-image-recent"
+                      src="image/recent__logo-2.jpg"
                       alt="Image: Logo"
                     />
                   </div>
-                  <div class="account__person account__person-popular">
-                    <div class="account__name account__name-popular">
-                      Viola Manisa
+                  <div
+                    class="account__person account__person-popular account__person-recent"
+                  >
+                    <div
+                      class="account__name account__name-popular account__name-recent"
+                    >
+                      Tyler Murray
                     </div>
                     <div class="account__verified">
                       <div class="account__verified-icon">
@@ -366,17 +383,21 @@
                 Постоянная способность учиться будет на самых важных навыках.
               </p>
               <div class="account">
-                <div class="account__info account__info-popular">
+                <div class="account__info">
                   <div class="account__logo">
                     <img
-                      class="account__logo-image"
-                      src="image/fear__logo.png"
+                      class="account__logo-image account__logo-image-recent"
+                      src="image/recent__logo-3.jpg"
                       alt="Image: Logo"
                     />
                   </div>
-                  <div class="account__person account__person-popular">
-                    <div class="account__name account__name-popular">
-                      Viola Manisa
+                  <div
+                    class="account__person account__person-popular account__person-recent"
+                  >
+                    <div
+                      class="account__name account__name-popular account__name-recent"
+                    >
+                      Warren Casey
                     </div>
                     <div class="account__verified">
                       <div class="account__verified-icon">
@@ -411,7 +432,11 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <clipPath id="header-fone">
+    <clipPath
+      id="header-fone"
+      clipPathUnits="objectBoundingBox"
+      transform="scale(0.00069444 0.00571428)"
+    >
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

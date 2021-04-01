@@ -419,21 +419,39 @@ svg {
 
 .navbar__logo {
   padding-top: 13px;
+  min-width: 90px;
+  min-height: 28px;
 }
 
 .navbar__menu {
   display: flex;
+  width: 400px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: #fff;
-  margin-left: 40%;
+  margin-left: 39.5%;
+  height: 45px;
 }
 
 .navbar__link {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navbar__link-home {
+  margin-right: 33px;
+}
+
+.navbar__link-landing {
   margin-right: 20px;
-  margin-top: 14px;
+}
+
+.navbar__link-pages {
+  margin-right: 16px;
 }
 
 .navbar__link-btn {
@@ -447,6 +465,7 @@ svg {
   cursor: pointer;
   outline: none;
   padding: 0;
+  margin-left: 1px;
 }
 
 .navbar-links {
@@ -466,6 +485,18 @@ svg {
   background: rgba(255, 255, 255, 0);
   border: 2px solid #fff;
   margin-top: 1px;
+}
+
+.menu-button {
+  display: none;
+  width: 22px;
+  height: 17.7px;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border: none;
+  cursor: pointer;
 }
 
 .hero {
@@ -548,6 +579,8 @@ svg {
 .background-hero {
   background-image: url(../image/bgc_hero.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: relative;
   height: 100%;
 }
@@ -594,6 +627,7 @@ svg {
   width: 50%;
   padding: 36px 48px 32px 31px;
   border: 1px solid #E5EAF4;
+  border-left: none;
 }
 
 .featured__link {
@@ -655,6 +689,7 @@ svg {
   line-height: 48px;
   padding-top: 41px;
   padding-bottom: 16px;
+  margin: 0;
 }
 
 .popular__info {
@@ -674,7 +709,7 @@ svg {
 
 .popular__item {
   position: relative;
-  width: 555px;
+  width: 48.7%;
   height: 600px;
   border-radius: 16px;
   overflow: hidden;
@@ -841,9 +876,501 @@ svg {
 .account__date {
   align-items: center;
   display: flex;
+  color: #959EAD;
+}
+
+.account__date-featured {
+  color: #5A7184;
 }
 
 .account__name-popular {
   color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .featured {
+    max-width: 960px;
+  }
+  .featured__title {
+    font-size: 30px;
+  }
+  .featured__description {
+    padding: 20px;
+  }
+  .navbar__menu {
+    margin-left: 30%;
+  }
+  .popular__item {
+    height: max-content;
+  }
+  .popular__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .popular__item-title {
+    font-size: 30px;
+    margin-bottom: 10%;
+    padding-top: 40%;
+  }
+  .recent__item {
+    max-width: 300px;
+  }
+  .recent__item-info {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .air {
+    height: 60px;
+  }
+  .featured {
+    max-width: 700px;
+    max-height: 330px;
+    top: 160%;
+  }
+  .featured__title {
+    margin-top: 10px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .featured__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .featured__description {
+    padding: 20px 14px;
+    border-bottom-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  .navbar__menu {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .navbar__button {
+    margin-left: 0;
+  }
+  .navbar__btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .hero__title {
+    font-size: 40px;
+  }
+  .hero__search {
+    max-width: 700px;
+  }
+  .popular__title {
+    padding-top: 0;
+    font-size: 32px;
+  }
+  .popular__text {
+    font-size: 14px;
+    margin-right: 15%;
+  }
+  .popular__item-info {
+    padding: 25px;
+  }
+  .popular__item-title {
+    font-size: 22px;
+    margin-bottom: 0%;
+    padding-top: 40%;
+    line-height: 30px;
+  }
+  .popular__offers-link {
+    font-size: 13px;
+  }
+  .recent__title {
+    padding-top: 0;
+    font-size: 32px;
+  }
+  .recent__text {
+    font-size: 14px;
+  }
+  .recent__item {
+    max-width: 220px;
+  }
+  .recent__item-info {
+    padding: 10px;
+  }
+  .recent__item-title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .recent__item-text {
+    font-size: 12px;
+  }
+  .account {
+    font-size: 12px;
+  }
+  .account__verified-icon {
+    margin-right: 4px;
+  }
+  .account__verified-text {
+    font-size: 12px;
+  }
+  .account__logo-image-recent {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .air {
+    height: 240px;
+  }
+  .container {
+    max-width: 550px;
+  }
+  .navbar__logo-img {
+    width: 77px;
+    height: 24px;
+  }
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__button {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+  }
+  .menu-button-line {
+    width: 22px;
+    height: 2.2px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  .featured {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    top: 185%;
+    min-width: 550px;
+    max-height: 514px;
+    position: relative;
+  }
+  .featured__image {
+    width: 100%;
+    height: 257px;
+    overflow: hidden;
+  }
+  .featured__image-fear {
+    height: auto;
+  }
+  .featured__description {
+    height: 257px;
+    width: 100%;
+    border: 1px solid #E5EAF4;
+    border-top: none;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 34px 20px;
+  }
+  .featured__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .featured__text {
+    line-height: 24px;
+  }
+  .hero__search {
+    max-width: 550px;
+  }
+  .hero__tag-popular {
+    font-size: 14px;
+  }
+  .hero__tag-link {
+    font-size: 14px;
+    padding: 4px 10px;
+    margin-bottom: 5px;
+  }
+  .popular__item-info {
+    padding: 15px;
+  }
+  .popular__item-title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 20%;
+    padding-bottom: 5%;
+  }
+  .popular__text {
+    margin-right: 5%;
+  }
+  .account__info-popular {
+    margin-left: 0;
+  }
+  .container-featured {
+    height: 0;
+  }
+  .button-blue__btn {
+    min-width: 155px;
+    padding: 7px 10px;
+  }
+  .recent__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .recent__item {
+    max-width: 330px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 92%;
+  }
+  .hero__block {
+    max-width: 92%;
+  }
+  .hero__search {
+    max-width: 100%;
+  }
+  .hero__tag {
+    flex-wrap: wrap;
+  }
+  .hero-wale {
+    clip-path: url();
+  }
+  .featured {
+    min-width: 330px;
+  }
+  .featured__image {
+    height: 220px;
+  }
+  .featured__description {
+    padding: 15px;
+  }
+  .featured__text {
+    margin-bottom: 30px;
+  }
+  .popular__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular__item {
+    margin-bottom: 10px;
+    width: 330px;
+  }
+  .popular__item-title {
+    margin-top: 40%;
+  }
+  .button-blue {
+    display: none;
+  }
+  .recent__item {
+    max-height: 360px;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    max-width: 90%;
+  }
+  .navbar {
+    padding-top: 20px;
+    width: 97%;
+  }
+  .navbar__logo {
+    padding-top: 0;
+    padding-left: 8px;
+  }
+  .menu-button {
+    margin-top: 3px;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0);
+  }
+  .hero__title {
+    margin-top: 4px;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .hero__search {
+    position: relative;
+    height: 48px;
+    padding-left: 15px;
+    margin-bottom: 75px;
+    border-radius: 8px;
+  }
+  .hero__search-icon {
+    margin-right: 11px;
+    margin-top: 5px;
+  }
+  .hero__search-submit {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 48px;
+  }
+  .hero__block {
+    max-width: 94%;
+  }
+  .hero__tag {
+    padding-bottom: 64px;
+  }
+  .hero__tag-popular {
+    margin-right: 50%;
+    margin-bottom: 12px;
+  }
+  .hero__tag-link {
+    padding: 5px 17px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    line-height: 20px;
+  }
+  .featured {
+    min-width: 288px;
+    transform: translateY(-48.5%);
+  }
+  .featured__image {
+    height: 160px;
+    position: relative;
+  }
+  .featured__image-fear {
+    position: absolute;
+    height: 177px;
+    width: 100%;
+    top: -9px;
+  }
+  .featured__description {
+    padding: 25px 19px;
+    height: 288px;
+  }
+  .featured__link {
+    text-transform: uppercase;
+    padding: 2px 13px;
+  }
+  .featured__text {
+    margin-bottom: 27px;
+  }
+  .account__logo-image {
+    width: 36px;
+    height: 36px;
+  }
+  .account__name {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -3px;
+  }
+  .account__verified {
+    margin-top: 4px;
+  }
+  .account__verified-icon {
+    margin-right: 7px;
+  }
+  .account__verified-text {
+    margin-top: -2px;
+  }
+  .account__date {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  .account__person-recent {
+    margin-left: 7px;
+  }
+  .popular {
+    text-align: center;
+    margin-top: 39px;
+  }
+  .popular__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 11px;
+  }
+  .popular__text {
+    font-size: 11px;
+    line-height: 24px;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .popular__item {
+    width: 100%;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 16px;
+    height: 320px;
+  }
+  .popular__item-info {
+    padding: 17px 19px;
+  }
+  .popular__item-title {
+    margin-top: 14%;
+  }
+  .popular__item-title-secondary {
+    padding-bottom: 4%;
+    margin-top: 36%;
+  }
+  .popular__image {
+    height: 320px;
+  }
+  .popular__offers {
+    text-align: left;
+    margin-top: 6px;
+  }
+  .popular__offers-link {
+    padding: 2px 10px;
+    font-size: 14px;
+  }
+  .button-blue-recent {
+    position: absolute;
+    display: block;
+    top: 16px;
+    left: 23%;
+    margin-right: 0;
+    min-width: 172px;
+  }
+  .button-blue__btn {
+    min-width: 172px;
+    padding: 7px 16px;
+  }
+  .recent {
+    text-align: center;
+    position: relative;
+  }
+  .recent__title {
+    margin-top: 0;
+    padding-top: 123px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .recent__text {
+    padding-top: 0;
+    line-height: 24px;
+    padding-bottom: 9px;
+  }
+  .recent__card {
+    text-align: left;
+  }
+  .recent__item {
+    max-height: 320px;
+    margin-bottom: 16px;
+  }
+  .recent__item-info {
+    padding: 15px 20px;
+  }
+  .recent__item-text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 7px;
+  }
+  .recent__item-text-sec {
+    margin-bottom: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

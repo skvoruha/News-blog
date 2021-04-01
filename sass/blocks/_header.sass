@@ -7,18 +7,29 @@
   position: relative
   &__logo
     padding-top: 13px
+    min-width: 90px
+    min-height: 28px
   &__menu
-
     display: flex
+    width: 400px
     font-style: normal
     font-weight: 600
     font-size: 16px
     line-height: 22px
     color: $light
-    margin-left: 40%
+    margin-left: 39.5%
+    height: 45px
   &__link
-    margin-right: 20px
-    margin-top: 14px
+    margin-top: 7px
+    display: flex
+    align-items: center
+    flex-direction: row
+    &-home
+      margin-right: 33px
+    &-landing
+      margin-right: 20px
+    &-pages
+      margin-right: 16px
     &-btn
       width: 12px
       height: 16px
@@ -30,6 +41,7 @@
       cursor: pointer
       outline: none
       padding: 0
+      margin-left: 1px
   &-links
     text-decoration: none
     color: $light
@@ -43,3 +55,14 @@
     background: rgba(255, 255, 255, 0)
     border: 2px solid #fff
     margin-top: 1px
+.menu
+  &-button
+    display: none
+    width: 22px
+    height: 17.7px
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    cursor: pointer
